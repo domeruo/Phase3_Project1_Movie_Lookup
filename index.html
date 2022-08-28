@@ -1,0 +1,35 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+  </head>
+  <body>
+    <form id="form" action="/" target="_self" method="get">
+      <div>
+        <label>Title:</label>
+        <input
+          required
+          type="text"
+          id="search"
+          placeholder="search"
+          class="search"
+        />
+      </div>
+      <div>
+        <label>Year:</label>
+        <input type="text" id="year" placeholder="year" class="year" />
+      </div>
+      <div>
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
